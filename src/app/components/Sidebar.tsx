@@ -5,18 +5,33 @@ import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import clsx from "clsx";
 
-const navItems = {
+interface navItems {
+  [key: string]: {
+    name: string;
+    x: number;
+    y: number;
+    w: string;
+  };
+}
+
+const navItems: navItems = {
   "/": {
     name: "home",
     x: 0,
-    y: 0,
-    w: "64px",
+    y: 4,
+    w: "58px",
   },
   "/about": {
     name: "about",
-    x: 64,
-    y: 35,
-    w: "65px",
+    x: 58,
+    y: 39,
+    w: "61px",
+  },
+  "/projects": {
+    name: "projects",
+    x: 119,
+    y: 81,
+    w: "78px",
   },
 };
 
@@ -34,12 +49,12 @@ export default function Sidebar() {
           id="nav"
         >
           <div className="flex flex-row md:flex-col space-x-0 pr-10 mb-2 mt-2 md:mt-0">
-            {/* {navItems[pathname] ? (
+            {navItems[pathname] ? (
               <>
-                Desktop version, hidden on mobile, animates y axis 
+                {/* Desktop version, hidden on mobile, animates y axis */}
                 <div className="hidden md:block">
                   <motion.div
-                    className="absolute bg-neutral-100 dark:bg-[#2f3c4f] h-[34px] rounded-md z-[-1]"
+                    className="absolute bg-yellow-700 dark:bg-[#2f3c4f] h-[36px] rounded-md z-[-1]"
                     layoutId="test2"
                     initial={{ opacity: 0, y: navItems[pathname].y }}
                     animate={{
@@ -54,10 +69,10 @@ export default function Sidebar() {
                     }}
                   />
                 </div>
-                Mobile version, hidden on desktop, animates x axis
+                {/* Mobile version, hidden on desktop, animates x axis */}
                 <div className="block md:hidden">
                   <motion.div
-                    className="absolute bg-neutral-100 dark:bg-neutral-800 h-[34px] rounded-md z-[-1]"
+                    className="absolute bg-yellow-700 dark:bg-neutral-800 h-[38px] rounded-md z-[-1]"
                     layoutId="test"
                     initial={{ opacity: 0, x: navItems[pathname].x }}
                     animate={{
@@ -73,7 +88,7 @@ export default function Sidebar() {
                   />
                 </div>
               </>
-            ) : null}  */}
+            ) : null}
 
             {Object.entries(navItems).map(([path, { name }]) => {
               const isActive = path === pathname;
@@ -85,7 +100,7 @@ export default function Sidebar() {
                   className={clsx(
                     "transition-all hover:text-neutral-800 dark:hover:text-neutral-200 py-[5px] px-[10px]",
                     {
-                      "text-neutral-500": !isActive,
+                      " text-neutral-500": !isActive,
                       "font-bold": isActive,
                     }
                   )}

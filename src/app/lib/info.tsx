@@ -1,12 +1,13 @@
-import me from "../placeholder.jpg";
+import me from "./avatar.jpg";
 
 export const name = "Melih Berkay Aydin";
 export const avatar = me;
 export const about = () => {
   return (
     <>
-      Hey, I'm a developer who loves Next.js. I work at BigCo or CoolStartup as
-      a Software Engineer.
+      Hi there! I am a master's student at the{" "}
+      <b>Technical University of Munich</b>, working part time as{" "}
+      <b>Database Developer</b> at <b>Infineon</b>.
     </>
   );
 };

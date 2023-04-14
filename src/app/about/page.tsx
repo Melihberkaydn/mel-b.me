@@ -3,8 +3,8 @@ import { Fragment } from "react";
 export default function AboutPage() {
   return (
     <Fragment>
-      <h1>About Page</h1>
-      <p>
+      <h1 className="font-bold font-serif text-3xl">About me</h1>
+      <p className="my-5 text-neutral-800 dark:text-neutral-200">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in nisl
         elit. Orci varius natoque penatibus et magnis dis parturient montes,
         nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent
