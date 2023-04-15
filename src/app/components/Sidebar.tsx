@@ -27,8 +27,8 @@ const navItems: navItems = {
     y: 39,
     w: "61px",
   },
-  "/projects": {
-    name: "projects",
+  "/portfolio": {
+    name: "portfolio",
     x: 119,
     y: 81,
     w: "78px",
@@ -37,9 +37,6 @@ const navItems: navItems = {
 
 export default function Sidebar() {
   let pathname = usePathname() || "/";
-  if (pathname.includes("/blog/")) {
-    pathname = "/blog";
-  }
 
   return (
     <aside className="md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-serif text-lg">
