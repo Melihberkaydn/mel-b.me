@@ -1,14 +1,14 @@
 import Image from "next/image";
 import { name, about, bio, avatar } from "./lib/info";
-import LinkedInIcon from "./lib/LinkedIn-Icon";
-import EmailIcon from "./lib/emailIcon";
+import LinkedInIcon from "./lib/Icons/LinkedIn-Icon";
+import EmailIcon from "./lib/Icons/emailIcon";
 
 export const revalidate = 60;
 
 export default async function HomePage() {
   return (
     <section>
-      <h1 className="font-bold text-3xl text-green-800 font-serif">{name}</h1>
+      <h1 className="font-bold text-3xl text-green-800 font-heads">{name}</h1>
       <div className="flex items-start md:items-center my-8 flex-col md:flex-row">
         <div className=" w-32 bg-green-800 rounded-full">
           <Image

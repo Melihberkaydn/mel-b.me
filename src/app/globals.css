@@ -13,3 +13,29 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+svg {
+  display: inline;
+}
+
+.cls-1,
+.cls-3 {
+  fill: none;
+}
+
+.cls-1,
+.cls-2,
+.cls-3 {
+  stroke: #353535;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+}
+
+.cls-1 {
+  stroke-linecap: round;
+}
+
+.cls-2,
+.cls-4 {
+  fill: #353535;
+}

@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ["var(--font-adventpro)", ...fontFamily.sans],
+        heads: ["var(--font-adventpro)", ...fontFamily.sans],
       },
     },
   },

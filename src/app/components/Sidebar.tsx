@@ -18,7 +18,7 @@ const navItems: navItems = {
   "/": {
     name: "home",
     x: 0,
-    y: 4,
+    y: 2,
     w: "58px",
   },
   "/about": {
@@ -30,7 +30,7 @@ const navItems: navItems = {
   "/portfolio": {
     name: "portfolio",
     x: 119,
-    y: 81,
+    y: 79,
     w: "78px",
   },
 };
@@ -39,7 +39,7 @@ export default function Sidebar() {
   let pathname = usePathname() || "/";
 
   return (
-    <aside className="md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-serif text-lg">
+    <aside className="md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-heads text-lg">
       <div className="lg:sticky lg:top-20">
         <nav
           className="flex overflow-hidden flex-row md:flex-col items-start relative px-4 md:px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
@@ -51,7 +51,7 @@ export default function Sidebar() {
                 {/* Desktop version, hidden on mobile, animates y axis */}
                 <div className="hidden md:block">
                   <motion.div
-                    className="absolute bg-yellow-700 dark:bg-[#2f3c4f] h-[36px] rounded-md z-[-1]"
+                    className="absolute bg-yellow-600 dark:bg-[#2f3c4f] h-[36px] rounded-md z-[-1]"
                     layoutId="test2"
                     initial={{ opacity: 0, y: navItems[pathname].y }}
                     animate={{
