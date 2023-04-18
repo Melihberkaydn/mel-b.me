@@ -3,6 +3,13 @@ import { Teko } from "next/font/google";
 import clsx from "clsx";
 import { AI, Prog, CertificateIcon, DeckIcon } from "../lib/Icons/Icons";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Portfolio",
+  description: "Various Certificates and Projects",
+};
+
 import {
   prog_specs_list,
   al_specs_list,

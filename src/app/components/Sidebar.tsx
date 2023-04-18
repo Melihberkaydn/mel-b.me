@@ -43,7 +43,6 @@ const navItems: navItems = {
 
 export default function Sidebar() {
   let pathname = usePathname();
-  console.log(pathname);
 
   return (
     <aside className="md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-heads text-lg">

@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import me from "./avatar.jpg";
 
 export const name = "Melih Berkay Aydin";
@@ -11,10 +12,24 @@ export const about = () => {
     </>
   );
 };
+<ul className="my-6 list-disc ml-5 space-y-1 ">
+  <li>TUMai Makeathon</li>
+  <li>Innovation Sprint</li>
+  <li>Think Make & Start</li>
+</ul>;
+
 export const bio = () => {
   return (
-    <>
-      I developed this website to create a front for the 
-    </>
+    <div>
+      <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200">
+        I developed this website to create a showcase for the event and future
+        job applications. Next events that I would like to participate:
+      </p>
+      <ul className="my-6 list-disc ml-5 space-y-1 ">
+        <li>TUMai Makeathon</li>
+        <li>Innovation Sprint</li>
+        <li>Think Make & Start</li>
+      </ul>
+    </div>
   );
 };

@@ -5,6 +5,13 @@ import {
   InstagramIcon,
 } from "../lib/Icons/Icons";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "Database Developer Werkstudent in Infineon.",
+};
+
 export default function AboutPage() {
   return (
     <section>
