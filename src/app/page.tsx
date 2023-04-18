@@ -54,7 +54,7 @@ export default async function HomePage() {
       <p className="my-5 max-w-[550px] text-neutral-800 dark:text-neutral-200">
         {about()}
       </p>
-      <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200"></p>
+      <p></p>
       {bio()}
     </section>
   );

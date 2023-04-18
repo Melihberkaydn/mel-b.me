@@ -1,6 +1,13 @@
 import clsx from "clsx";
 import { technology_list } from "../lib/certificates/certificates";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Credits",
+  description: "React.js Frontend , AWS Hoseted Portfolio",
+};
+
 export default function AboutPage() {
   return (
     <section>
