@@ -12,7 +12,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        heads: ["var(--font-adventpro)", ...fontFamily.sans],
+        heads: ["var(--font-pacifico)", ...fontFamily.sans],
       },
     },
   },

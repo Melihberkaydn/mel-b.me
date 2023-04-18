@@ -1,14 +1,12 @@
-import { Fragment } from "react";
+import { Fragment, ReactElement, FC } from "react";
 import { Teko } from "next/font/google";
 import clsx from "clsx";
-import { AI } from "../lib/Icons/AI-Icon";
-import { Prog } from "../lib/Icons/Prog-Icon";
-import { Bullet } from "../lib/Icons/Bullet";
+import { AI, Prog, CertificateIcon, DeckIcon } from "../lib/Icons/Icons";
+
 import {
-  deepl_spec_list,
-  foc_list,
-  google_list,
-  others_list,
+  prog_specs_list,
+  al_specs_list,
+  pitchdecks_list,
 } from "../lib/certificates/certificates";
 
 const teko = Teko({
@@ -18,69 +16,98 @@ const teko = Teko({
   style: "normal",
 });
 
+const Headers = ({
+  children,
+  name,
+  textUp = true,
+  size = "text-2xl",
+}: {
+  children: React.ReactNode;
+  name: string;
+  textUp?: boolean;
+  size?: string;
+}) => {
+  return (
+    <div>
+      {children}
+      <h3
+        className={clsx(
+          teko.className,
+          "font-bold inline-block mx-3 font-list",
+          textUp && "align-text-top",
+          size
+        )}
+      >
+        {name}
+      </h3>
+    </div>
+  );
+};
+
+/*
+ */
+
 export default function PorfolioPage() {
   return (
     <Fragment>
       <h1 className="font-bold font-heads text-3xl">Portfolio</h1>
-      <p className="my-5 text-neutral-800 dark:text-neutral-200">
-        Currently Devoloping here... Check back later!
-      </p>
-      <h2 className={clsx(teko.className, "font-bold text-2xl")}>
-        Certificates & Specializations
-      </h2>
-      <p className="my-5 text-neutral-800 dark:text-neutral-200">
-        Here you can find my certificates. You can click and download.
-      </p>
-      <div>
-        <AI />
-        <h3
-          className={clsx(
-            teko.className,
-            "font-bold inline-block align-text-top mx-3 underline font-list text-2xl"
-          )}
-        >
-          Analytics & ML/DL
-        </h3>
+      <div className="">
+        <p className="my-5 text-neutral-800 dark:text-neutral-200">
+          I'm thrilled to share my professional achievements with you. Here is
+          another track that you can try while taking a look:
+        </p>
+
+        <iframe
+          className=" rounded"
+          src="https://open.spotify.com/embed/track/1W6bam6ERzqyP064EMwJnv?utm_source=generator&theme=1"
+          width="100%"
+          height="100"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+        <hr className="h-px my-6 bg-gray-400  border-0 dark:bg-grey-200"></hr>
+        <p className="my-5 text-neutral-800 dark:text-neutral-200">
+          Throughout my academic and professional journey, I've always been
+          passionate about learning and expanding my skill set. That's why I've
+          earned a variety of certificates in my field of expertise, from
+          programming and data analysis to entrepreneurship. I believe that my
+          certificates not only showcase my commitment to continuous learning,
+          but also demonstrate my dedication to delivering high-quality work and
+          achieving my professional goals.
+        </p>
+        <p className="my-5 text-neutral-800 dark:text-neutral-200">
+          This portfolio page features a comprehensive collection of all my
+          certificates, which I hope will give you a better understanding of my
+          skills and qualifications. Whether you're a potential employer,
+          colleague, or simply someone interested in learning more about me, I
+          hope that this portfolio page will provide you with valuable insights.
+          Thank you for taking the time to visit my portfolio page, and please
+          feel free to reach out to me if you have any questions or would like
+          to learn more about my work.
+        </p>
+        <Headers name="Pitch Decks" size="text-3xl">
+          <DeckIcon />
+        </Headers>
+        <p className="my-5 text-neutral-800 dark:text-neutral-200">
+          Here are the pitch decks we created on different courses at TUM.
+        </p>
+        {pitchdecks_list}
+        <Headers name="Certificates & Specializations" size="text-3xl">
+          <CertificateIcon />
+        </Headers>
+        <p className="my-5 text-neutral-800 dark:text-neutral-200">
+          Here you can find my certificates. You can click and see on the
+          coursera or as pdf on another tab.
+        </p>
+        <Headers name="Analytics & ML/DL">
+          <AI />
+        </Headers>
+        {al_specs_list}
+        <Headers name="Programming" textUp={false}>
+          <Prog />
+        </Headers>
+        {prog_specs_list}
       </div>
-      <ul className={clsx(teko.className, "my-6 list-outside")}>
-        {others_list}
-        <li className="list-disc">
-          <h4 className={clsx(teko.className, "text-xl ")}>
-            Deep Learning Specialization (Coursera, deeplearning.ai)
-          </h4>
-        </li>
-        <ul className={clsx(teko.className, "list-outside")}>
-          {deepl_spec_list}
-        </ul>
-        <li className="list-disc">
-          <h4 className={clsx(teko.className, "text-xl ")}>
-            Google Data Analytics Professional Certificate
-          </h4>
-        </li>
-        <ul className={clsx(teko.className, "list-outside")}>{google_list}</ul>
-      </ul>
-      <div>
-        <Prog />
-        <h3
-          className={clsx(
-            teko.className,
-            "font-bold inline-block align-text mx-3 underline font-list text-2xl"
-          )}
-        >
-          Programming
-        </h3>
-      </div>
-      <ul className={clsx(teko.className, "my-6 list-outside list-disc")}>
-        <a href="https://coursera.org/share/2223b1f1a6c43bc4264c63330dbf830b">
-          <li>
-            <h4 className={clsx(teko.className, "text-xl")}>
-              Fundamentals of Computing Specialization (Coursera, Rice
-              University)
-            </h4>
-          </li>
-        </a>
-        <ul className={clsx(teko.className, "list-outside")}> {foc_list}</ul>
-      </ul>
     </Fragment>
   );
 }

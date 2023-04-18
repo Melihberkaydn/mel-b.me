@@ -12,5 +12,9 @@ export const about = () => {
   );
 };
 export const bio = () => {
-  return <>I am interested in ML & MlOps .</>;
+  return (
+    <>
+      I developed this website to create a front for the 
+    </>
+  );
 };

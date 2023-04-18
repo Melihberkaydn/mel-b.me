@@ -2,16 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-}
-
 html {
   min-width: 360px;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
 
 svg {
