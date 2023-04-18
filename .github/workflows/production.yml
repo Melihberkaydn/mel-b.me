@@ -15,8 +15,19 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm ci
-      - run: npm run build
+      - name: Yarn Install
+        run: |
+          yarn install
+      - name: Staging Build
+        run: |
+          yarn build
+      - name: Unit Tests
+        run: |
+          yarn test
+      - name: Deploy to S3
+        uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --acl public-read --delete
       - name: Deploy to S3
         uses: jakejarvis/s3-sync-action@master
         with:
