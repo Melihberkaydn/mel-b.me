@@ -22,16 +22,13 @@ const technology: specializations = {
     courses: {
       1: {
         cert_name:
-          "Front-End Web UI Frameworks and Tools: React.js, TailwindCSS Next.js",
+          "Front-End Web UI Frameworks and Tools: React.js, TailwindCSS, Next.js",
       },
       2: {
         cert_name: "Code Repository: Git, GitHub",
       },
       3: {
-        cert_name: "Continuous Deployment: GitHub Actions, Vercel",
-      },
-      4: {
-        cert_name: "Static Web Hosting and CDN: Amazon S3, Amazon CloudFront",
+        cert_name: "Continuous Deployment & Hosting: Vercel",
       },
     },
   },
