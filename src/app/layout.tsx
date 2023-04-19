@@ -3,6 +3,7 @@ import "./globals.css";
 import clsx from "clsx";
 import { Pacifico } from "next/font/google";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Create Next App",
@@ -40,6 +41,7 @@ export default function RootLayout({
         <Sidebar />
         <main className="flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0">
           {children}
+          <Analytics></Analytics>
         </main>
       </body>
     </html>
