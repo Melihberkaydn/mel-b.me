@@ -176,10 +176,10 @@ export function List({
 
 function Specialization({ spec }: { spec: specializations }) {
   var speclist = (
-    <ul className={clsx(teko.className, "my-6 ml-6 list-outside list-disc")}>
+    <ul className={clsx(teko.className, "my-6 ml-6 list-outside list-none")}>
       {Object.entries(spec).map(([spec, obj]) => (
         <div className="mb-3" key={uuidv4()}>
-          <li className="list-disc text-2xl">
+          <li className="text-2xl">
             {obj.finished ? (
               <a target="_blank" rel="noopener noreferrer" href={obj.url}>
                 <h4 className={clsx(teko.className, "text-xl underline")}>

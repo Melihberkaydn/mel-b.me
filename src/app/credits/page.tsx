@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   description: "React.js Frontend , AWS Hoseted Portfolio",
 };
 
-export default function AboutPage() {
+export default function Credits() {
   return (
     <section>
       <h1 className="font-bold font-heads text-3xl">Credits</h1>
-      <p className="mt-8 text-neutral-800 dark:text-neutral-200 indent-10">
+      <p className="mt-8 text-neutral-800 dark:text-neutral-200">
         This page's main frame created from <i>Lee Robinson's</i> open source
         portfolio site. You can find the open source code{" "}
         <b>

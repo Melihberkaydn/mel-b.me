@@ -16,7 +16,7 @@ export default function AboutPage() {
   return (
     <section>
       <h1 className="font-bold font-heads text-3xl">About me</h1>
-      <p className="mt-8 text-neutral-800 dark:text-neutral-200 indent-10">
+      <p className="mt-8 text-neutral-800 dark:text-neutral-200">
         Hello and welcome! My name is Melih and I'm originally from Istanbul,
         Turkey, but currently living in <b>Munich, Germany</b>. I'm pursuing my
         Master's degree while also working as a
