@@ -16,7 +16,7 @@ export default async function HomePage() {
     <section>
       <h1 className="font-bold text-3xl font-heads">{name}</h1>
       <div className="flex items-start md:items-center my-8 flex-col md:flex-row">
-        <div className=" w-32 bg-red-500 rounded-full">
+        <div className=" w-32 bg-[#a2c11c] rounded-full">
           <Image
             alt={name}
             className="rounded-full grayscale"

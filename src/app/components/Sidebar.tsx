@@ -57,7 +57,7 @@ export default function Sidebar() {
                 {/* Desktop version, hidden on mobile, animates y axis */}
                 <div className="hidden md:block">
                   <motion.div
-                    className="absolute bg-yellow-600 dark:bg-red-300 h-[36px] rounded-md z-[-1]"
+                    className="absolute bg-yellow-600 dark:bg-yellow-50 h-[36px] rounded-md z-[-1]"
                     layoutId="test2"
                     initial={{ opacity: 0, y: navItems[pathname].y }}
                     animate={{
@@ -75,7 +75,7 @@ export default function Sidebar() {
                 {/* Mobile version, hidden on desktop, animates x axis */}
                 <div className="block md:hidden">
                   <motion.div
-                    className="absolute bg-yellow-700 dark:bg-red-300 h-[38px] rounded-md z-[-1]"
+                    className="absolute bg-yellow-700 dark:bg-yellow-50 h-[38px] rounded-md z-[-1]"
                     layoutId="test"
                     initial={{ opacity: 0, x: navItems[pathname].x }}
                     animate={{
@@ -101,7 +101,7 @@ export default function Sidebar() {
                   key={path}
                   href={path}
                   className={clsx(
-                    "transition-all dark:hover:text-red-500 dark:text-neutral-200 py-[5px] px-[10px]",
+                    "transition-all dark:hover:text-emerald-800 dark:text-neutral-200 py-[5px] px-[10px]",
                     isActive && "dark:text-neutral-600"
                   )}
                 >

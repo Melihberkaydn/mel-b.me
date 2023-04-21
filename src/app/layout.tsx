@@ -29,7 +29,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        "text-[#0e2431] bg-[#ececec] dark:text-[#fc3a52] dark:bg-[#0e2431]",
+        "text-[#0e2431] bg-[#ececec] dark:text-[#f6e4ad] dark:bg-[#0e2431]",
         pacifico.variable
       )}
     >

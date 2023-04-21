@@ -1,3 +1,6 @@
+const dark_color = "#a2c11c";
+import clsx from "clsx";
+
 export const AI = () => {
   return (
     <svg
@@ -13,7 +16,7 @@ export const AI = () => {
       <title />
 
       <path
-        className="cls-1 dark:fill-white dark:stroke-red-500"
+        className={clsx("cls-1", "dark:fill-white", "dark:stroke-``red-500")}
         d="M3.51508,31.09827C3.673,38.55066,6.735,44.5,10.5,44.5c3.866,0,7-6.268,7-14s-3.134-14-7-14c-2.97783,0-5.51924,3.72025-6.53,8.963"
       />
 

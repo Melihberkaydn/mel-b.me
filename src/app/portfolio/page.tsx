@@ -99,7 +99,7 @@ export default function PorfolioPage() {
           Here are the pitch decks we created on different courses at TUM.
         </p>
         {pitchdecks_list}
-        <Headers name="Certificates & Specializations" size="text-3xl">
+        <Headers name="Certificates & Specs" size="text-3xl">
           <CertificateIcon />
         </Headers>
         <p className="my-5 text-neutral-800 dark:text-neutral-200">
