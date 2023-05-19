@@ -1,10 +1,12 @@
 const dark_color = "#a2c11c";
 import clsx from "clsx";
 
+const color = "[#f6e4ad]";
+const color2 = "[#0e2431]";
+
 export const AI = () => {
   return (
     <svg
-      className=" dark:text-neutral-200"
       width="30px"
       height="30px"
       viewBox="0 0 48 48"
@@ -16,24 +18,24 @@ export const AI = () => {
       <title />
 
       <path
-        className={clsx("cls-1", "dark:fill-white", "dark:stroke-``red-500")}
+        className={clsx(`dark:stroke-${color}`, `stroke-${color2}`)}
         d="M3.51508,31.09827C3.673,38.55066,6.735,44.5,10.5,44.5c3.866,0,7-6.268,7-14s-3.134-14-7-14c-2.97783,0-5.51924,3.72025-6.53,8.963"
       />
 
       <circle
-        className="cls-2 dark:fill-white dark:stroke-red-500"
+        className={clsx(`dark:stroke-${color}`, `stroke-${color2}`)}
         cx="2.5"
         cy="30"
         r="1.5"
       />
 
       <path
-        className="cls-3 dark:fill-white dark:stroke-red-500"
+        className={clsx(`dark:stroke-${color}`, `stroke-${color2}`)}
         d="M10.5,16.5H36c3.866,0,7,6.268,7,14s-3.134,14-7,14H10.5"
       />
 
       <line
-        className="cls-3 dark:fill-white dark:stroke-red-500"
+        className={clsx(`dark:stroke-${color}`, `stroke-${color2}`)}
         x1="23.5"
         x2="35"
         y1="36"
@@ -41,36 +43,36 @@ export const AI = () => {
       />
 
       <path
-        className="cls-3 dark:fill-white dark:stroke-red-500"
+        className={clsx(`dark:stroke-${color}`, `stroke-${color2}`)}
         d="M23.95691,32a22.19594,22.19594,0,0,1-1.82562,8h12a22.19594,22.19594,0,0,0,1.82562-8Z"
       />
 
       <circle
-        className="cls-3 dark:fill-white dark:stroke-red-500"
+        className={clsx(`dark:stroke-${color}`, `stroke-${color2}`)}
         cx="24"
         cy="26"
         r="2"
       />
 
       <circle
-        className="cls-3 dark:fill-white dark:stroke-red-500"
+        className={clsx(`dark:stroke-${color}`, `stroke-${color2}`)}
         cx="36"
         cy="26"
         r="2"
       />
 
       <polygon
-        className="cls-4 dark:fill-white dark:stroke-red-500"
+        className={clsx(`dark:stroke-${color}`, `stroke-${color2}`)}
         points="24 20 22.5 24 25.5 24 24 20"
       />
 
       <polygon
-        className="cls-4 dark:fill-white dark:stroke-red-500"
+        className={clsx(`dark:stroke-${color}`, `stroke-${color2}`)}
         points="36 20 34.5 24 37.5 24 36 20"
       />
 
       <line
-        className="cls-3 dark:fill-white dark:stroke-red-500"
+        className={clsx(`dark:stroke-${color}`, `stroke-${color2}`)}
         x1="10"
         x2="4"
         y1="30"
@@ -79,14 +81,14 @@ export const AI = () => {
 
       <g>
         <circle
-          className="cls-2 dark:fill-white dark:stroke-red-500"
+          className={clsx(`dark:stroke-${color}`, `stroke-${color2}`)}
           cx="45.5"
           cy="30"
           r="1.5"
         />
 
         <line
-          className="cls-3 dark:fill-white dark:stroke-red-500"
+          className={clsx(`dark:stroke-${color}`, `stroke-${color2}`)}
           x1="43"
           x2="45.5"
           y1="30"
@@ -95,7 +97,7 @@ export const AI = () => {
       </g>
 
       <path
-        className="cls-3 dark:fill-white dark:stroke-red-500"
+        className={clsx(`dark:stroke-${color}`, `stroke-${color2}`)}
         d="M34.04285,16.5c2.24615-3.29572,3.22772-6.21051,2.21326-7.06177-.93073-.781-3.28094.39581-5.86761,2.74475.91248-3.73846.81488-6.6839-.4007-7.12634-1.26019-.45868-3.33038,1.91052-5.07544,5.58209C24.59357,6.25757,23.41235,3,22,3s-2.59357,3.25757-2.91235,7.63873C17.34259,6.96716,15.2724,4.598,14.01221,5.05664c-1.21558.44244-1.31317,3.38788-.4007,7.12634C11.02484,9.834,8.67462,8.65723,7.7439,9.43823,6.72943,10.28949,7.711,13.20428,9.95715,16.5"
       />
     </svg>
@@ -112,7 +114,7 @@ export const EmailIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        className="dark:stroke-red-500"
+        className={clsx(`dark:stroke-${color}`)}
         d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
         stroke="#000000"
         strokeWidth="2"
@@ -120,7 +122,7 @@ export const EmailIcon = () => {
         strokeLinejoin="round"
       />
       <rect
-        className="dark:stroke-red-500"
+        className={clsx(`dark:stroke-${color}`)}
         x="3"
         y="5"
         width="18"
@@ -137,7 +139,7 @@ export const EmailIcon = () => {
 export const CertificateIcon = () => {
   return (
     <svg
-      className="dark:fill-red-500 dark:stroke-white"
+      className={`dark:fill-${color}`}
       width="25px"
       height="25px"
       id="_x32_"
@@ -169,7 +171,7 @@ export const DeckIcon = () => {
   return (
     <svg
       width="30px"
-      className="dark:fill-red-500 dark:stroke-white"
+      className={clsx(`dark:stroke-${color}`)}
       height="30px"
       viewBox="0 0 16 16"
       xmlns="http://www.w3.org/2000/svg"
@@ -196,7 +198,7 @@ export const LinkedInIcon = () => {
       fill="none"
     >
       <path
-        className="dark:fill-red-500"
+        className={`dark:fill-${color}`}
         fill="#0A66C2"
         d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"
       />
@@ -207,21 +209,21 @@ export const LinkedInIcon = () => {
 export const Prog = () => {
   return (
     <svg
-      className="dark:fill-white dark:stroke-red-500"
+      className={clsx(`dark:fill-${color}`)}
       fill="#000000"
       width="30px"
       height="30px"
       viewBox="0 0 512 512"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g className="dark:fill-white dark:stroke-red-500" id="Coding">
+      <g className={clsx(`dark:fill-${color}`)} id="Coding">
         <path
-          className="dark:fill-white dark:stroke-red-500"
+          className={clsx(`dark:fill-${color}`)}
           d="M80.917,377.0605H202V439.16H139a9.8965,9.8965,0,1,0,0,19.7929H373a9.8965,9.8965,0,1,0,0-19.7929H310V377.0605H431.0864a49.9023,49.9023,0,0,0,49.5528-44.1254H31.36A49.91,49.91,0,0,0,80.917,377.0605Z"
         />
 
         <path
-          className="dark:fill-white dark:stroke-red-500"
+          className={clsx(`dark:fill-${color}`)}
           d="M431.0869,53.0474H80.9175A49.9181,49.9181,0,0,0,31,102.9648V313.1416H481V102.9648A49.9144,49.9144,0,0,0,431.0869,53.0474ZM201.2354,231.6016a9.8993,9.8993,0,1,1-16.4708,10.9863l-36-54a9.9133,9.9133,0,0,1,0-10.9863l36-54a9.8993,9.8993,0,0,1,16.4708,10.9863L168.9,183.0947Zm86.7128-117.5537-45,144a9.899,9.899,0,1,1-18.8964-5.9063l45-144a9.899,9.899,0,1,1,18.8964,5.9063Zm75.2872,74.54-36,54a9.8993,9.8993,0,0,1-16.4708-10.9863L343.1,183.0947l-32.335-48.5068a9.8993,9.8993,0,0,1,16.4708-10.9863l36,54A9.9133,9.9133,0,0,1,363.2354,188.5879Z"
         />
       </g>
@@ -252,7 +254,7 @@ export const InstagramIcon = () => {
           id="Dribbble-Light-Preview"
           transform="translate(-340.000000, -7439.000000)"
           fill="#000000"
-          className="dark:fill-red-500"
+          className={clsx(`dark:fill-${color}`)}
         >
           <g id="icons" transform="translate(56.000000, 160.000000)">
             <path
@@ -295,7 +297,7 @@ export function GitHubIcon() {
     >
       <g clipPath="url(#clip0_9914_10)">
         <path
-          className="dark:fill-red-500"
+          className={clsx(`dark:fill-${color}`)}
           d="M12 0C5.374 0 0 5.373 0 12C0 17.302 3.438 21.8 8.207 23.387C8.806 23.498 9 23.126 9 22.81V20.576C5.662 21.302 4.967 19.16 4.967 19.16C4.421 17.773 3.634 17.404 3.634 17.404C2.545 16.659 3.717 16.675 3.717 16.675C4.922 16.759 5.556 17.912 5.556 17.912C6.626 19.746 8.363 19.216 9.048 18.909C9.155 18.134 9.466 17.604 9.81 17.305C7.145 17 4.343 15.971 4.343 11.374C4.343 10.063 4.812 8.993 5.579 8.153C5.455 7.85 5.044 6.629 5.696 4.977C5.696 4.977 6.704 4.655 8.997 6.207C9.954 5.941 10.98 5.808 12 5.803C13.02 5.808 14.047 5.941 15.006 6.207C17.297 4.655 18.303 4.977 18.303 4.977C18.956 6.63 18.545 7.851 18.421 8.153C19.191 8.993 19.656 10.064 19.656 11.374C19.656 15.983 16.849 16.998 14.177 17.295C14.607 17.667 15 18.397 15 19.517V22.81C15 23.129 15.192 23.504 15.801 23.386C20.566 21.797 24 17.3 24 12C24 5.373 18.627 0 12 0Z"
           fill="currentColor"
         />

@@ -81,6 +81,25 @@ const programming_specs: specializations = {
 };
 
 const anlytics_specs: specializations = {
+  "Machine Learning Specialization (Coursera, Stanford)": {
+    url: "https://coursera.org/share/9541fb356757d676b56db3259ea90081",
+    finished: true,
+    courses: {
+      1: {
+        cert_name: "Supervised Machine Learning: Regression and Classification",
+        link: "https://coursera.org/share/ba8ef736f1b034ff2c1656325a6e794d",
+      },
+      2: {
+        cert_name: "Advanced Learning Algorithms",
+        link: "https://coursera.org/share/3e55dd14185916d4046a63727487d761",
+      },
+      3: {
+        cert_name:
+          "Unsupervised Learning, Recommenders, Reinforcement Learning",
+        link: "https://coursera.org/share/3d1f20a257594da9f6047d50e0ad1bfa",
+      },
+    },
+  },
   "Google Data Analytics Professional Certificate": {
     finished: false,
     url: "",
@@ -123,14 +142,10 @@ const anlytics_specs: specializations = {
     finished: false,
     courses: {
       1: {
-        cert_name: "Supervised Machine Learning: Regression and Classification",
-        link: "https://coursera.org/share/ba8ef736f1b034ff2c1656325a6e794d",
-      },
-      2: {
         cert_name: "Data Analysis with Python",
         link: "https://coursera.org/share/ad208dac5e223e9898c3350820f6209d",
       },
-      3: {
+      2: {
         cert_name:
           "Intro. to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning",
         link: "https://coursera.org/share/464f23d9b4336c6713e0f289c1647c76",
