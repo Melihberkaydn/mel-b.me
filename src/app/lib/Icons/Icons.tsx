@@ -254,7 +254,7 @@ export const InstagramIcon = () => {
           id="Dribbble-Light-Preview"
           transform="translate(-340.000000, -7439.000000)"
           fill="#000000"
-          className={clsx(`dark:fill-${color}`)}
+          className={clsx(`dark:fill-[#f6e4ad]`)}
         >
           <g id="icons" transform="translate(56.000000, 160.000000)">
             <path
