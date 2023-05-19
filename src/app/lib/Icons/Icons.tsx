@@ -171,7 +171,7 @@ export const DeckIcon = () => {
   return (
     <svg
       width="30px"
-      className={clsx(`dark:stroke-${color}`)}
+      className={clsx(`dark:stroke-[#f6e4ad]`)}
       height="30px"
       viewBox="0 0 16 16"
       xmlns="http://www.w3.org/2000/svg"
