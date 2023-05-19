@@ -19,7 +19,7 @@ export default function AboutPage() {
       <p className="mt-8 text-neutral-800 dark:text-neutral-200">
         Hello and welcome! My name is Melih and I'm originally from Istanbul,
         Turkey, but currently living in <b>Munich, Germany</b>. I'm pursuing my
-        Master's degree while also working as a
+        Master's degree while also working as a{" "}
         <b> Database Developer Werkstudent at Infineon</b>. Here is a background
         music that I listened repeatedly when I was developing this page.
       </p>
