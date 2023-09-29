@@ -47,6 +47,19 @@ const pitchdecks: specializations = {
   },
 };
 
+const reports: specializations = {
+  "South Tyrol Apple Value Chain Consultancy Report": {
+    url: "https://drive.google.com/file/d/1jOVLn_nLwd2b2TFPtSVyaYfbdh0WZ4TP/view?usp=drive_link",
+    finished: true,
+    courses: {},
+  },
+  "Standards Wars Strategies in smart home market": {
+    url: "https://drive.google.com/file/d/1XrEPF-GAKlQ5uxEZvfH2OoYamwdilOfi/view?usp=sharing",
+    finished: true,
+    courses: {},
+  },
+};
+
 const programming_specs: specializations = {
   "Fundamentals of Computing Specialization (Coursera, Rice University)": {
     url: "https://coursera.org/share/2223b1f1a6c43bc4264c63330dbf830b",
@@ -134,6 +147,10 @@ const anlytics_specs: specializations = {
       3: {
         cert_name: "Structuring Machine Learning Projects",
         link: "https://coursera.org/share/bd82c3c6bad9e1384ff989145c400931",
+      },
+      4: {
+        cert_name: "Convolutional Neural Networks",
+        link: "https://coursera.org/share/1bfc31f71f736efd1e31dfb224548bf2",
       },
     },
   },
@@ -230,4 +247,5 @@ function Specialization({ spec }: { spec: specializations }) {
 export const al_specs_list = Specialization({ spec: anlytics_specs });
 export const prog_specs_list = Specialization({ spec: programming_specs });
 export const pitchdecks_list = Specialization({ spec: pitchdecks });
+export const report_list = Specialization({ spec: reports });
 export const technology_list = Specialization({ spec: technology });

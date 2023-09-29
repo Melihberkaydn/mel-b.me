@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { name, about, bio, avatar } from "./lib/info";
+import { name, about, avatar } from "./lib/info";
 import { LinkedInIcon, EmailIcon } from "./lib/Icons/Icons";
 
 export const revalidate = 60;
@@ -51,11 +51,9 @@ export default async function HomePage() {
           </li>
         </ul>
       </div>
-      <p className="my-5 max-w-[550px] text-neutral-800 dark:text-neutral-200">
+      <div className="my-5 max-w-[640px] text-neutral-800 dark:text-neutral-200 hyphens-auto">
         {about()}
-      </p>
-      <p></p>
-      {bio()}
+      </div>
     </section>
   );
 }

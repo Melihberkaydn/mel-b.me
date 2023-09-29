@@ -1,7 +1,12 @@
 import { Fragment, ReactElement, FC } from "react";
-import { Teko } from "next/font/google";
-import clsx from "clsx";
-import { AI, Prog, CertificateIcon, DeckIcon } from "../lib/Icons/Icons";
+import Header from "../components/AccordionHeader";
+import {
+  AI,
+  Prog,
+  CertificateIcon,
+  DeckIcon,
+  Report,
+} from "../lib/Icons/Icons";
 
 import { Metadata } from "next";
 
@@ -14,45 +19,8 @@ import {
   prog_specs_list,
   al_specs_list,
   pitchdecks_list,
+  report_list,
 } from "../lib/certificates/certificates";
-
-const teko = Teko({
-  subsets: ["latin"],
-  variable: "--font-teko",
-  weight: "500",
-  style: "normal",
-});
-
-const Headers = ({
-  children,
-  name,
-  textUp = true,
-  size = "text-2xl",
-}: {
-  children: React.ReactNode;
-  name: string;
-  textUp?: boolean;
-  size?: string;
-}) => {
-  return (
-    <div>
-      {children}
-      <h3
-        className={clsx(
-          teko.className,
-          "font-bold inline-block mx-3 font-list",
-          textUp && "align-text-top",
-          size
-        )}
-      >
-        {name}
-      </h3>
-    </div>
-  );
-};
-
-/*
- */
 
 export default function PorfolioPage() {
   return (
@@ -92,28 +60,49 @@ export default function PorfolioPage() {
           feel free to reach out to me if you have any questions or would like
           to learn more about my work.
         </p>
-        <Headers name="Pitch Decks" size="text-3xl">
-          <DeckIcon />
-        </Headers>
-        <p className="my-5 text-neutral-800 dark:text-neutral-200">
-          Here are the pitch decks we created on different courses at TUM.
-        </p>
-        {pitchdecks_list}
-        <Headers name="Certificates & Specs" size="text-3xl">
-          <CertificateIcon />
-        </Headers>
-        <p className="my-5 text-neutral-800 dark:text-neutral-200">
-          Here you can find my certificates. You can click and see on the
-          coursera or as pdf on another tab.
-        </p>
-        <Headers name="Analytics & ML/DL">
-          <AI />
-        </Headers>
-        {al_specs_list}
-        <Headers name="Programming" textUp={false}>
-          <Prog />
-        </Headers>
-        {prog_specs_list}
+        <Header img={<Report />} name="Papers/Reports" size="text-3xl">
+          <p className="my-5 text-neutral-800 dark:text-neutral-200">
+            Here are the research and consultation reports that we created
+            during different studies.
+          </p>
+          {report_list}
+        </Header>
+
+        <Header img={<DeckIcon />} name="Pitch Decks" size="text-3xl">
+          <p className="my-5 text-neutral-800 dark:text-neutral-200">
+            Here are the pitch decks we created on different courses at TUM.
+          </p>
+          {pitchdecks_list}
+        </Header>
+        <Header
+          img={<CertificateIcon />}
+          name="Certificates & Specs"
+          size="text-3xl"
+          expand={true}
+        >
+          <p className="my-4 text-neutral-800 dark:text-neutral-200">
+            Here you can find my certificates. You can click and see on the
+            coursera or as pdf on another tab.
+          </p>
+          <Header
+            img={<AI />}
+            expand={true}
+            indent="ml-8"
+            name="Analytics & ML/DL"
+          >
+            {al_specs_list}
+          </Header>
+
+          <Header
+            img={<Prog />}
+            expand={true}
+            indent="ml-8"
+            name="Programming"
+            textUp={true}
+          >
+            {prog_specs_list}
+          </Header>
+        </Header>
       </div>
     </Fragment>
   );
