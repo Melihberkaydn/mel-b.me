@@ -35,9 +35,9 @@ export default function AboutPage() {
         As someone who's always had a passion for technology and data analysis,
         I'm constantly looking for ways to expand my skills and knowledge.
         That's why I'm currently dedicating a lot of my free time to learning
-        about software and machine learning. My ultimate goal is to become a{" "}
-        <b>Machine Learning Engineer</b>, and I'm excited to see where this
-        journey will take me.
+        about business analytics and decision making. My ultimate goal is to
+        become a <b>Consultant</b>, and I'm excited to see where this journey
+        will take me.
       </p>
       <p className="mt-5 text-neutral-800 dark:text-neutral-200">
         When I'm not studying or working, I love spending time outdoors and
