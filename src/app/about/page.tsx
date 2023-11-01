@@ -15,13 +15,15 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <section>
-      <h1 className="font-bold font-heads text-3xl">About me</h1>
+      <h1 className="font-bold font-heads text-3xl">About Me</h1>
       <p className="mt-8 text-neutral-800 dark:text-neutral-200">
-        Hello and welcome! My name is Melih and I'm originally from Istanbul,
-        Turkey, but currently living in <b>Munich, Germany</b>. I'm pursuing my
-        Master's degree while also working as a{" "}
-        <b> Database Developer Werkstudent at Infineon</b>. Here is a background
-        music that I listened repeatedly when I was developing this page.
+        Greetings! I'm Melih, hailing from the vibrant city of Istanbul, Turkey,
+        and currently embracing the rich culture of <b>Munich, Germany</b>. As I
+        navigate through my Master's program, I'm also honing my skills as a{" "}
+        <b>Database Developer Werkstudent at Infineon</b>. While crafting this
+        page, there was one particular track that became the soundtrack of my
+        development process — perhaps you have your own go-to music that fuels
+        your creativity?
       </p>
       <iframe
         className="border-12 mt-8 rounded"
@@ -31,33 +33,33 @@ export default function AboutPage() {
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
+
       <p className="mt-5 text-neutral-800 dark:text-neutral-200">
-        As someone who's always had a passion for technology and data analysis,
-        I'm constantly looking for ways to expand my skills and knowledge.
-        That's why I'm currently dedicating a lot of my free time to learning
-        about business analytics and decision making. My ultimate goal is to
-        become a <b>Consultant</b>, and I'm excited to see where this journey
-        will take me.
+        My enthusiasm for technology and data analysis knows no bounds. I'm on a
+        perpetual quest to broaden my technical skillset, with a keen focus on
+        business analytics and decision-making. My ambition is to meld my
+        technical prowess with business insight, acting as a conduit between the
+        realms of technological innovation and strategic growth. I'm on the
+        lookout for challenges that foster my development and allow me to make a
+        meaningful contribution. The anticipation of where this path leads is
+        exhilarating.
       </p>
+      <hr className="h-px my-6 bg-gray-400 border-0 dark:bg-grey-200"></hr>
       <p className="mt-5 text-neutral-800 dark:text-neutral-200">
-        When I'm not studying or working, I love spending time outdoors and
-        being active. <i>Hiking and snowboarding</i> are two of my favorite
-        activities, and I find that being in nature helps me recharge and stay
-        focused.
+        Away from the world of data and algorithms, I find solace in the great
+        outdoors. Whether it's <i>hiking through rugged terrains</i> or{" "}
+        <i>carving slopes on my snowboard</i>, embracing nature is my way of
+        rejuvenating my spirit and maintaining focus.
       </p>
-      <hr className="h-px my-6 bg-gray-400  border-0 dark:bg-grey-200"></hr>
-      <p className="mt-5 text-neutral-800 dark:text-neutral-200">
-        On this website, you'll find a variety of content related to my
-        interests and passions. Whether you're interested in technology, sports,
-        or simply looking for some inspiration, I hope that my website will
-        provide you with some valuable insights and ideas.
-      </p>
+
       <p className="mt-5 text-neutral-800 dark:text-neutral-200">
         <b>
-          Thanks for stopping by, and feel free to reach out if you have any
-          questions or comments. I'd love to connect with you!
+          Thank you for visiting! I'm always open to questions, comments, or a
+          friendly chat. Don't hesitate to reach out — let's connect and share
+          our journeys!
         </b>
       </p>
+
       <div className="flex flex-col gap-2 md:flex-row md:gap-2 mt-6">
         <a
           rel="noopener noreferrer"
