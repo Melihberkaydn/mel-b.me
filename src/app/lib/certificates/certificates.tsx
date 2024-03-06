@@ -12,7 +12,17 @@ type specializations = {
     url: string;
     finished: boolean;
     courses: { [key: number]: course };
+    desc?: string;
   };
+};
+
+const programming: specializations = {
+  "Predicting Emergency Department Access Block to Alleviate Overcrowding": {
+    url: "",
+    finished: false,
+    courses: {},
+    desc: "Developed a time series prediction model using Python (Pandas, sci-kit-learn, Darts) to forecast daily access blocked patient amounts (patients unable to be admitted from the ED to wards). Achieved model accuracy with an average prediction error of 2.4 individuals, aiding in mitigating ED overcrowding.",
+  },
 };
 
 const technology: specializations = {
@@ -219,18 +229,24 @@ function Specialization({ spec }: { spec: specializations }) {
                 </h4>
               </a>
             ) : (
-              <h4
-                className={clsx(
-                  teko.className,
-                  "text-xl",
-                  obj.finished && "underline"
-                )}
-              >
-                {spec}
-              </h4>
+              <>
+                <h4
+                  className={clsx(
+                    teko.className,
+                    "text-xl",
+                    obj.finished && "underline"
+                  )}
+                >
+                  {spec}
+                </h4>
+              </>
             )}
           </li>
           <ul className={clsx(teko.className, "list-outside")}>
+            <p className="my-5 text-neutral-800 dark:text-neutral-200">
+              {" "}
+              {obj.desc}
+            </p>
             {Object.entries(obj.courses).map(([key, course]) => (
               <div key={key} className=" ml-2 w-full flex flex-col">
                 <List url={course.link} certName={course.cert_name} />
@@ -249,3 +265,4 @@ export const prog_specs_list = Specialization({ spec: programming_specs });
 export const pitchdecks_list = Specialization({ spec: pitchdecks });
 export const report_list = Specialization({ spec: reports });
 export const technology_list = Specialization({ spec: technology });
+export const programming_list = Specialization({ spec: programming });

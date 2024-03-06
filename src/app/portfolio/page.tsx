@@ -6,6 +6,7 @@ import {
   CertificateIcon,
   DeckIcon,
   Report,
+  Software,
 } from "../lib/Icons/Icons";
 
 import { Metadata } from "next";
@@ -20,6 +21,7 @@ import {
   al_specs_list,
   pitchdecks_list,
   report_list,
+  programming_list,
 } from "../lib/certificates/certificates";
 
 export default function PorfolioPage() {
@@ -60,6 +62,18 @@ export default function PorfolioPage() {
           feel free to reach out to me if you have any questions or would like
           to learn more about my work.
         </p>
+        <Header
+          img={<Software />}
+          name="Ml/Software Projects"
+          size="text-3xl"
+          expand={true}
+        >
+          <p className="my-5 text-neutral-800 dark:text-neutral-200">
+            Here is the showcase of my ml and software projects.
+          </p>
+          {programming_list}
+        </Header>
+
         <Header img={<Report />} name="Papers/Reports" size="text-3xl">
           <p className="my-5 text-neutral-800 dark:text-neutral-200">
             Here are the research and consultation reports that we created
@@ -78,7 +92,6 @@ export default function PorfolioPage() {
           img={<CertificateIcon />}
           name="Certificates & Specs"
           size="text-3xl"
-          expand={true}
         >
           <p className="my-4 text-neutral-800 dark:text-neutral-200">
             Here you can find my certificates. You can click and see on the
