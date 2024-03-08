@@ -15,7 +15,7 @@ const Header = ({
   children,
   name,
   textUp = true,
-  size = "text-2xl",
+  /*size = "text-2xl",*/
   img,
   expand = false,
   indent,
@@ -43,10 +43,8 @@ const Header = ({
         {img}
         <h3
           className={clsx(
-            teko.className,
             "font-bold inline-block mx-2 font-list",
-            textUp && "align-text-top",
-            size
+            textUp && "align-text-top"
           )}
         >
           {name}

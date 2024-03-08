@@ -18,15 +18,15 @@ type specializations = {
 
 const programming: specializations = {
   "Predicting Emergency Department Access Block to Alleviate Overcrowding": {
-    url: "",
-    finished: false,
+    url: "https://drive.google.com/file/d/1r4FEdTckrBI5XAA57dhTO_EUwXkvWKQF/view?usp=drive_link",
+    finished: true,
     courses: {},
     desc: "Developed a time series prediction model using Python (Pandas, sci-kit-learn, Darts) to forecast daily access blocked patient amounts (patients unable to be admitted from the ED to wards). Achieved model accuracy with an average prediction error of 2.4 individuals, aiding in mitigating ED overcrowding.",
   },
 };
 
 const technology: specializations = {
-  "Technologies behind this site::": {
+  "Technologies behind this site:": {
     url: "",
     finished: false,
     courses: {
@@ -201,14 +201,19 @@ export function List({
     <li
       key={key}
       className={clsx(
-        "transition-all hover:text-neutral-800 dark:hover:text-neutral-200 py-[3px] text-lg align-text-top list-disc"
+        "transition-all hover:text-neutral-800 dark:hover:text-neutral-200 py-[3px] align-text-top list-disc"
       )}
     >
       {" "}
       {url == "" ? (
         <p>{certName} </p>
       ) : (
-        <a href={url} target="_blank" rel="noopener noreferrer">
+        <a
+          href={url}
+          className="underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {certName}
         </a>
       )}
@@ -218,32 +223,22 @@ export function List({
 
 function Specialization({ spec }: { spec: specializations }) {
   var speclist = (
-    <ul className={clsx(teko.className, "my-6 ml-6 list-outside list-none")}>
+    <ul className={clsx("my-6 ml-6 list-outside list-none")}>
       {Object.entries(spec).map(([spec, obj]) => (
         <div className="mb-3" key={uuidv4()}>
-          <li className="text-2xl">
+          <li className="">
             {obj.finished ? (
               <a target="_blank" rel="noopener noreferrer" href={obj.url}>
-                <h4 className={clsx(teko.className, "text-xl underline")}>
-                  {spec}
-                </h4>
+                <h4 className={clsx("underline mt-8 font-bold")}>{spec}</h4>
               </a>
             ) : (
               <>
-                <h4
-                  className={clsx(
-                    teko.className,
-                    "text-xl",
-                    obj.finished && "underline"
-                  )}
-                >
-                  {spec}
-                </h4>
+                <h4 className="font-bold mt-8">{spec}</h4>
               </>
             )}
           </li>
-          <ul className={clsx(teko.className, "list-outside")}>
-            <p className="my-5 text-neutral-800 dark:text-neutral-200">
+          <ul className={clsx("list-outside")}>
+            <p className="my-2 text-neutral-800 dark:text-neutral-200">
               {" "}
               {obj.desc}
             </p>

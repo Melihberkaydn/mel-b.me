@@ -86,7 +86,7 @@ export const Report = () => {
   );
 };
 
-export const Software = () => {
+export function Software() {
   return (
     <svg
       className={clsx("mt-2", `dark:fill-${color}`)}
@@ -138,9 +138,9 @@ export const Software = () => {
       </g>
     </svg>
   );
-};
+}
 
-export const AI = () => {
+export function AI() {
   return (
     <svg
       className={clsx("mt-2", "stroke-[#000000]", `dark:stroke-[#f6e4ad]`)}
@@ -257,7 +257,7 @@ export const AI = () => {
       />
     </svg>
   );
-};
+}
 
 export const Up = () => {
   return (
