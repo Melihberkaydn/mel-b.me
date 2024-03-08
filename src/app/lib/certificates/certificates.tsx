@@ -23,6 +23,12 @@ const programming: specializations = {
     courses: {},
     desc: "Developed a time series prediction model using Python (Pandas, sci-kit-learn, Darts) to forecast daily access blocked patient amounts (patients unable to be admitted from the ED to wards). Achieved model accuracy with an average prediction error of 2.4 individuals, aiding in mitigating ED overcrowding.",
   },
+  "CreditWise: Credit Scoring Service": {
+    url: "https://github.com/Melihberkaydn/CreditWise",
+    finished: true,
+    courses: {},
+    desc: "React Front-End Application of CreditWise. Easy-to-use UI expedites the decision-making processes, aiding financial advisors/managers in their decisions.",
+  },
 };
 
 const technology: specializations = {
