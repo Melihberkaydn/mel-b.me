@@ -19,11 +19,11 @@ export default function AboutPage() {
       <p className="mt-8 text-neutral-800 dark:text-neutral-200">
         Greetings! I'm Melih, hailing from the vibrant city of Istanbul, Turkey,
         and currently embracing the rich culture of <b>Munich, Germany</b>. As I
-        navigate through my Master's program, I'm also honing my skills as a{" "}
-        <b>Database Developer Werkstudent at Infineon</b>. While crafting this
-        page, there was one particular track that became the soundtrack of my
-        development process — perhaps you have your own go-to music that fuels
-        your creativity?
+        navigate through my Master's program, I'm also improving my skills as a{" "}
+        <b>Software Engineer at Infineon</b>. While crafting this page, there
+        was one particular track that became the soundtrack of my development
+        process — perhaps you have your own go-to music that fuels your
+        creativity?
       </p>
       <iframe
         className="border-12 mt-8 rounded"

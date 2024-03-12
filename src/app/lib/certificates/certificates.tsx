@@ -30,7 +30,7 @@ const programming: specializations = {
     desc: "React Front-End Application of CreditWise. Easy-to-use UI expedites the decision-making processes, aiding financial advisors/managers in their decisions.",
   },
   "Post-It: Note Taking App": {
-    url: "https://melihberkaydn.github.io/Note-Taking-App/",
+    url: "https://melihberkaydn.github.io/Post-It-App/",
     finished: true,
     courses: {},
     desc: "Note app with various features such as dark mode, Pinned notes, restricted note character count. Created by react and react hooks, such as Context, state, reducer and Effect.",

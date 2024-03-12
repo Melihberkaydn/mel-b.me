@@ -41,19 +41,19 @@ const Header = ({
       >
         {isExpanded ? <Up /> : <Down />}
         {img}
-        <h3
+        <h2
           className={clsx(
-            "font-bold inline-block mx-2 font-list",
+            "font-bold inline-block mx-2 font-list text-xl",
             textUp && "align-text-top"
           )}
         >
           {name}
-        </h3>
+        </h2>
       </div>
 
       <div
         className={clsx(
-          "transition-all ease-in-out duration-500 overflow-hidden",
+          "transition-all ease-in-out  duration-500 overflow-hidden",
           isExpanded ? "max-h-[150vh]" : "max-h-0"
         )}
       >
