@@ -15,10 +15,9 @@ export const about = () => {
         Currently, I’m diving deep into advanced studies at{" "}
         <b>the Technical University of Munich</b> and contributing to the
         digitalization wave at <b> Infineon</b> as
-        <b> a part-time Database Developer</b>. My journey in Industrial
-        Engineering has fueled my fascination for data-driven strategies,
-        especially in optimizing operational processes and unveiling actionable
-        insights.
+        <b> Software Engineer</b>. My journey in Industrial Engineering has
+        fueled my fascination for data-driven strategies, especially in
+        optimizing operational processes and unveiling actionable insights.
       </p>
       <p className="my-3">
         In the vibrant classrooms of Munich, my master’s program has been a

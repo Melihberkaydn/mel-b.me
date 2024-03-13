@@ -64,7 +64,7 @@ export default function PorfolioPage() {
         </p>
         <Header
           img={<Software />}
-          name="Ml/Software Projects"
+          name="ML / Software Projects"
           size="text-3xl"
           expand={true}
         >

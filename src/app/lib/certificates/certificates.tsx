@@ -13,6 +13,7 @@ type specializations = {
     finished: boolean;
     courses: { [key: number]: course };
     desc?: string;
+    img?: React.Component;
   };
 };
 
